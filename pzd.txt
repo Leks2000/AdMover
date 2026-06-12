@@ -1,0 +1,214 @@
+Общая идея
+Create a complete 3D browser game using Three.js, WebGL, TypeScript and Vite.
+
+The game should look like a modern hyper-casual mobile game.
+
+Genre:
+Crowd Runner + Zombie Survival + Mob Control.
+
+Theme:
+The player commands a growing army of soldiers fighting endless waves of zombies.
+
+Platform:
+WebGL browser game.
+Desktop and mobile compatible.
+Optimized for mobile devices.
+Визуальный стиль
+Visual Style:
+
+- Full 3D graphics.
+- Built with Three.js and WebGL.
+- Bright colorful hyper-casual visuals.
+- Low-poly art style.
+- Clean mobile game aesthetics.
+- Soft shadows.
+- Dynamic lighting.
+- Cartoon-style characters.
+- Stylized explosions.
+- Floating damage numbers.
+- Smooth animations.
+- Particle effects.
+- Muzzle flashes.
+- Coin collection effects.
+- Camera shake during explosions.
+- Mobile game quality similar to:
+  Count Masters,
+  Mob Control,
+  Survivor.io,
+  Last War Survival.
+Игрок
+Player:
+
+- A commander leading a group of soldiers.
+- Automatic forward movement.
+- Left and right movement using mouse drag or touch swipe.
+- Crowd follows the leader.
+- Crowd count displayed above the army.
+- Soldiers automatically shoot nearby enemies.
+Система ворот
+
+Самая главная механика.
+
+Gate System:
+
+The player encounters upgrade gates.
+
+Examples:
+
++20 Soldiers
++50 Soldiers
++100 Soldiers
+
+x2 Soldiers
+x3 Soldiers
+x5 Soldiers
+
++20% Fire Rate
++50% Damage
+
++1 Bullet
+
+Triple Shot
+
+Piercing Bullets
+
+Explosive Bullets
+
+Laser Weapon
+Выбор оружия
+
+Вот это я бы обязательно добавил.
+
+После каждого босса.
+
+Weapon Upgrade System:
+
+After boss fights the player chooses one of three upgrades.
+
+Examples:
+
+Assault Rifle
+Shotgun
+Minigun
+Rocket Launcher
+Laser Rifle
+Flamethrower
+Sniper Rifle
+
+Each weapon changes projectile behavior and visual effects.
+Зомби
+Enemies:
+
+Different zombie types.
+
+Walker Zombie
+Fast Zombie
+Heavy Zombie
+Exploding Zombie
+Armored Zombie
+Mutant Zombie
+
+Enemies attack the crowd and reduce army size.
+Боссы
+Bosses:
+
+Every few stages a boss appears.
+
+Examples:
+
+Mutant Giant
+Zombie Tank
+Bio Monster
+Zombie King
+
+Bosses have:
+
+- Health bars
+- Special attacks
+- Area damage
+- Multiple attack phases
+Прокачка армии
+Army Progression:
+
+Collect coins.
+
+Upgrade:
+
+Soldier Damage
+Fire Rate
+Maximum Army Size
+Critical Hit Chance
+Movement Speed
+Coin Multiplier
+Что должно быть видно на экране
+HUD:
+
+Current Level
+Army Size
+Coins
+Boss Health
+Current Weapon
+Upgrade Notifications
+Эффекты
+
+Это очень важно написать, иначе ИИ делает унылую демку.
+
+Visual Effects:
+
+Bullet trails
+Muzzle flashes
+Explosion particles
+Blood effects
+Floating damage numbers
+Coin popups
+Critical hit indicators
+Screen shake
+Smooth transitions
+Victory effects
+Производительность
+
+Чтобы не сделал 2000 объектов и не умер FPS.
+
+Performance Requirements:
+
+Use object pooling.
+
+Use InstancedMesh for soldiers.
+
+Use InstancedMesh for zombies.
+
+Target:
+60 FPS on mobile devices.
+
+Support:
+1000+ soldiers
+1000+ zombies
+
+Avoid creating and destroying objects every frame.
+Дополнительная фишка
+
+Я бы вообще сделал так:
+
+Left Gate:
+
++100 Soldiers
+
+Right Gate:
+
+Minigun
+
+Игрок постоянно выбирает:
+
+больше мяса
+или
+сильнее оружие
+
+Тогда появляется стратегия.
+
+Например:
+
+500 солдат + пистолеты
+
+или
+
+150 солдат + ракеты
